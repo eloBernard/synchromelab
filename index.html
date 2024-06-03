@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Tools</title>
+
+
+</head>
+<body>
+
+    <header>
+        <img src="yourlogo.png" alt="devops logo">
+        <h1>SychoLab</h1>
+   </header>
+
+   <nav>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+                
+            </li>
+          
+            <li><a href="#">CI/CD</a>
+              
+            
+            <li>
+                <a href="#">Container</a>
+                
+            </li>
+          
+          
+            
+            <li>
+                <a href="#">Cloud</a>
+           
+            </li>
+          
+            <li><a href="#">Repository</a>
+              
+               <li><a href="#">Login</a>
+      
+          
+        </ul>
+    
+  
+  </nav>
+    
+  
+  <div class="banner">
+  <div class="search-container">
+    <input type="text" class="search-bar" placeholder="Enter your search">
+    <button class="search-button">Search</button>
+  </div>
+  <p class="welcome-paragraph">DevOps Architecture Tools</p>
+</div>
+     
+  
+  <br>
+  <div class="scroll-container">
+    <img src="img-1.jpg" alt="Image 1">
+    <img src="img-2.jpg" alt="Image 2">
+      <img src="img-2.jpg" alt="Image 2">
+    <!-- Add more images here -->
+</div>
+   <div>
+     <p>Les outils DevOps sont des applications logicielles qui aident à automatiser, gérer et améliorer l'efficacité des différentes étapes du cycle de vie du développement logiciel (SDLC), de la conception et des tests au déploiement et à la surveillance. Voici quelques outils DevOps couramment utilisés, classés par leur fonction :</p>
+  </div> 
+  <br><br><br>
+  
+  
+   <div class="container">
+  <div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Discover Docker</div>
+      <div class="product-description">Plateforme pour développer, expédier et exécuter des applications dans des conteneurs.</div>
+     
+      <button class="button" onclick="DockerInfo()">Docker Info</button>
+    <div id="dockerInfo" class="docker-info">
+    <p> 
+    L'utilisation de conteneurs pour déployer des applications s'appelle la containerisation. Les conteneurs sont légers et contiennent tout ce qui est nécessaire pour exécuter l'application, y compris les bibliothèques, les outils système, le code et le runtime. Docker simplifie le processus de création, d'expédition et d'exécution des applications en fournissant un cadre commun pour les empaqueter et les exécuter.
+    </p>
+    </div>
+
+    <script>
+    function DockerInfo() {
+    var dockerInfoDiv = document.getElementById("dockerInfo");
+
+    if (dockerInfoDiv.style.display === "none") {
+      dockerInfoDiv.style.display = "block";
+    } else {
+      dockerInfoDiv.style.display = "none";
+           }
+    }
+  </script>
+    </div>
+  </div>
+      
+  
+
+  <div class="column">
+    <div class="content">
+      <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Discover Jenkins</div>
+      <div class="product-description">Serveur d'automatisation open-source pour la construction, les tests et le déploiement d'applications.</div>
+      
+       <button class="button" onclick="JenkinsInfo()">Jenkins Info</button>
+
+<div id="jenkinsInfo" class="jenkins-info">
+
+  <p>
+    Jenkins est un outil open source de serveur d'automatisation. Il aide à automatiser les parties du développement logiciel liées au build, aux tests et au déploiement, et facilite l'intégration continue et la livraison continue. Écrit en Java, Jenkins fonctionne dans un conteneur de servlets tel qu’Apache Tomcat, Nginx ou en mode autonome avec son propre serveur Web embarqué.
+  </p>
+</div>
+
+<script>
+function JenkinsInfo() {
+  var jenkinsInfoDiv = document.getElementById("jenkinsInfo");
+
+  if (jenkinsInfoDiv.style.display === "none") {
+    jenkinsInfoDiv.style.display = "block";
+  } else {
+    jenkinsInfoDiv.style.display = "none";
+  }
+}
+</script>
+    </div>
+  </div>
+     
+<div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Discover Ansible</div>
+      <div class="product-description">Outil open-source pour l'automatisation de la fourniture de logiciels, la gestion de la configuration et le déploiement des applications.</div>
+     
+       <button class="button" onclick="AnsibleInfo()">Ansible Info</button>
+
+<div id="ansibleInfo" class="ansible-info">
+
+  <p>
+    Ansible est une plateforme logicielle libre pour la configuration et la gestion des ordinateurs. Elle combine le déploiement de logiciels (en) multinœuds et la gestion de configuration. Elle gère les différents nœuds à travers SSH et ne nécessite l'installation d'aucun logiciel supplémentaire sur ceux-ci. Les modules communiquent via la sortie standard en notation JSON et le système utilise YAML pour exprimer des descriptions réutilisables de systèmes, appelées playbook.
+  </p>
+</div>
+      <br> 
+       
+      <br><br>
+     
+<script>
+function AnsibleInfo() {
+  var ansibleInfoDiv = document.getElementById("ansibleInfo");
+
+  if (ansibleInfoDiv.style.display === "none") {
+    ansibleInfoDiv.style.display = "block";
+  } else {
+    ansibleInfoDiv.style.display = "none";
+  }
+}
+</script>
+    </div>
+  </div>
+     
+
+     </div>
+<br> <br>
+  </div>
+  <div>
+    <div class="container">
+  <div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Discover Terraform</div>
+      <div class="product-description">Terraform est un outil open source « infrastructure en tant que code » créé par HashiCorp qui permet aux programmeurs de créer, de modifier et de gérer les versions d’une infrastructure de manière sûre et efficace.</div>
+      
+      <button class="button" onclick="TerraformInfo()">Terraform Info</button>
+    <div id="terraformInfo" class="terraform-info">
+    <p>Terraform est un outil de codage déclaratif qui permet aux développeurs d’utiliser un langage de configuration de haut niveau appelé HCL (HashiCorp Configuration Language) pour décrire « l’état final » souhaité de l’infrastructure cloud ou locale afin d’exécuter une application. Un plan est alors généré pour atteindre cet état final et le plan de provisionnement de l’infrastructure est exécuté.
+    </p>
+    </div>
+
+    <script>
+    function TerraformInfo() {
+    var terraformInfoDiv = document.getElementById("terraformInfo");
+
+    if (terraformInfoDiv.style.display === "none") {
+     terraformInfoDiv.style.display = "block";
+    } else {
+      terraformInfoDiv.style.display = "none";
+           }
+    }
+  </script>
+    </div>
+  </div>
+      
+  
+
+  <div class="column">
+    <div class="content">
+      <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Discover Kubernetes</div>
+      <div class="product-description">Kubernetes est une plateforme open source d'orchestration de containers créé par Google. Découvrez son utilité, son fonctionnement, ainsi que ses différences avec Docker.</div>
+      
+       <button class="button" onclick="KubernetesInfo()">Kubernetes Info</button>
+
+<div id="kubernetesInfo" class="kubernetes-info">
+
+  <p>
+    Kubernetes est un projet Open Source créé par Google en 2015. Il permet d'automatiser le déploiement et la gestion d'applications multi-container à l'échelle. Il s'agit d'un système permettant d'exécuter et de coordonner des applications containerisées sur un cluster de machines. C'est une plateforme conçue pour gérer entièrement le cycle de vie des applications et services containerisés en utilisant des méthodes de prédictibilité, de scalabilité et de haute disponibilité.
+
+Principalement compatible avec Docker, Kubernetes peut fonctionner avec n'importe quel système de container conforme au standard Open Container Initiative en termes de formats d'images et d'environnements d'exécution. 
+  </p>
+</div>
+
+<script>
+function KubernetesInfo() {
+  var kubernetesInfoDiv = document.getElementById("kubernetesInfo");
+
+  if (kubernetesInfoDiv.style.display === "none") {
+    kubernetesInfoDiv.style.display = "block";
+  } else {
+    kubernetesInfoDiv.style.display = "none";
+  }
+}
+</script>
+    </div>
+  </div>
+     
+<div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Discover Zabbix</div>
+      <div class="product-description">Zabbix est une solution de supervision professionnelle libre de droit.  C'est un logiciel qui permet de superviser de nombreux paramètres d'un réseau ainsi que la santé et l'intégrité des serveurs, des machines virtuelles, des applications, des bases de données, des sites web, du cloud et plus encore. </div>
+     
+       <button class="button" onclick="ZabbixInfo()">Zabbix Info</button>
+
+<div id="zabbixInfo" class="zabbix-info">
+
+  <p>
+    Zabbix utilise un mécanisme de notification flexible qui permet aux utilisateurs de configurer une alerte, ceci permet une réponse rapide aux problèmes serveurs. Zabbix offre un excellent reporting et des fonctionnalités de visualisation de données basées sur les données stockées. Zabbix supporte à la fois l’interrogation (polling) et la réception (trapping) de données. Tous les rapports et statistiques comme la configuration de paramètres, sont accessibles par l'interface web. L'interface web veille à ce que le statut de votre réseau et de vos serveurs puisse être évalué depuis n'importe quel endroit, qui peux jouer un rôle important dans la supervision de l'infrastructure IT. 
+  </p>
+</div>
+
+<script>
+function ZabbixInfo() {
+  var zabbixInfoDiv = document.getElementById("zabbixInfo");
+
+  if (zabbixInfoDiv.style.display === "none") {
+    zabbixInfoDiv.style.display = "block";
+  } else {
+    zabbixInfoDiv.style.display = "none";
+  }
+}
+</script>
+    </div>
+  </div>
+     
+
+    </div>
+  
+
+  <br><br><br>
+     <img src="photo1.jpg" alt="Photo 1">
+        <img src="photo2.jpg" alt="Photo 2">
+      <br>
+   
+  <div id="terraform-info" style="display: none;">
+        <p>To create a terraform image:</p>
+        <pre><code># Example terraform
+FROM base_image
+
+# Add your instructions here
+
+CMD ["/path/to/your/startup/script"]</code></pre>
+    </div>
+
+    <script>
+        function showInfo() {
+            var info = document.getElementById("devops-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+  
+  
+  
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+    <div class="item-content">
+      <div class="item-text">Discover Docker</div>
+     
+       <div class="terraform-button" onclick="showInfo()">Terraform</div>
+  
+       <div id="terraform-info" style="display: none;">
+        <p>To create a terraform image:</p>
+        <pre><code># Example terraform
+FROM base_image
+
+# Add your instructions here
+
+CMD ["/path/to/your/startup/script"]</code></pre>
+    </div>
+
+    <script>
+        function showInfo() {
+            var info = document.getElementById("terraform-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 2">
+    <div class="item-content">
+      <div class="item-text">Discover Jenkins</div>
+      <div class="jenkins-button" onclick="showInfo()">Jenkins</div>
+       <div id="jenkins-info" style="display: none;">
+        <p>To create a Docker image:</p>
+        <pre><code># Example Dockerfile
+FROM base_image
+
+# Add your instructions here
+
+CMD ["/path/to/your/startup/script"]</code></pre>
+    </div>
+
+    <script>
+        function showInfo() {
+            var info = document.getElementById("jenkins-info");
+            if (info.style.display === "none") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+  
+    </div>
+  </div>
+
+  <div class="gallery-item">
+    <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 4">
+    <div class="item-content">
+      <div class="item-text">Discover Terraform</div>
+      <button class="button" onclick="handleButtonClick('Button 3')">View Details</button>
+    </div>
+  </div>
+ <div class="gallery-item">
+    <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 3">
+    <div class="item-content">
+      <div class="item-text">Discover Ansible</div>
+      <button class="button" onclick="handleButtonClick('Button 4')">View Details</button>
+    </div>
+  </div>
+  
+   <div class="container">
+  <div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Label 1</div>
+      <div class="product-description">Description of Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <button class="button" onclick="handleButtonClick('Button 1')">Click Me</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Label 2</div>
+      <div class="product-description">Description of Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <button class="button" onclick="handleButtonClick('Button 2')">Click Me</button>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Label 3</div>
+      <div class="product-description">Description of Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <button class="button" onclick="handleButtonClick('Button 3')">Click Me</button>
+    </div>
+  </div>
+  </div>
+  **!*
+  
+    <div class="article">
+  <div class="overlay"></div>
+  <h1>Pipeline CI/CD</h1>
+       
+  <p>This is a sample a CI/CD Pipeline with photo as a background. Replace this text with your own content.</p>
+  <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 4">
+
+      
+ <div class="container">
+  <div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Label 1</div>
+      <div class="product-description">Description of Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <button class="button" onclick="handleButtonClick('Button 1')">Click Me</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="content">
+      <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Label 2</div>
+      <div class="product-description">Description of Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <button class="button" onclick="handleButtonClick('Button 2')">Click Me</button>
+    </div>
+  </div>
+<div class="column">
+    <div class="content">
+       <img src="https://ik.imagekit.io/ikmedia/backlit.jpg" alt="Photo 1">
+      <div class="label">Label 3</div>
+      <div class="product-description">Description of Service 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+      <button class="button" onclick="handleButtonClick('Button 3')">Click Me</button>
+    </div>
+  </div>
+  </div>
+     
+<footer>
+  <div class="container">
+  <div class="column">
+    <button class="login-button">Login</button>
+    <button class="password-button">Password</button>
+  </div>
+
+  <div class="column">
+    <p class="contact-info">Contact us at: example@example.com</p>
+  </div>
+</div>
+  
+  <div class="social-buttons">
+    <a href="https://facebook.com" target="_blank" class="social-button">Facebook</a>
+    <a href="https://twitter.com" target="_blank" class="social-button">Twitter</a>
+    <a href="https://instagram.com" target="_blank" class="social-button">Instagram</a>
+    <!-- Add more social buttons as needed -->
+  </div>
+  </footer>
+</body>
+</html>
