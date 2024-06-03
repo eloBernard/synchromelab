@@ -21,10 +21,13 @@ body {
         
       }
 
+
       header img {
-          max-width: 100px;
-          margin-left: 10px;
-      }
+        margin-left: 10px;
+        max-width: 150px; /* Adjust the width as needed */
+        height: auto;
+    }
+    
 
       nav {
           background-color: #37575b;
@@ -114,6 +117,7 @@ body {
     max-width: 1200px;
     margin: 20px auto;
     display: flex;
+    background-color: #96aa9d;
   }
 
   .column {
@@ -132,9 +136,13 @@ body {
 
   img {
     max-width: 100%;
-    height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
+    max-width: 33px;
+    height: auto;
+    width: 100%;
+    
+    
   }
 
   .label {
@@ -272,7 +280,7 @@ body {
   }*/
 /*article */
 
-  .article {
+.article {
     background-image: url(img src='https://ik.imagekit.io/ikmedia/backlit.jpg'); 
       /* Replace with your image URL */
     background-size: cover;
@@ -433,7 +441,7 @@ width: 100%;
           cursor: pointer;
       }
 
-}
+
 
 
 .devops-container {
@@ -480,7 +488,7 @@ img {
 img:hover {
   transform: scale(1.1);
 }
-<style>
+
     /* Style the navigation menu */
     ul {
         list-style-type: none;
@@ -524,4 +532,99 @@ img:hover {
     a:hover {
         background-color: #f0f0f0;
     }
-</style>
+    .same-size-image {
+        width: 150px; /* Set your desired width */
+        height: 180px; /* Set your desired height */
+       
+    }
+
+
+  /* Container styles */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Column styles */
+  .column {
+    flex: 1;
+    padding: 10px;
+  }
+
+  /* Content styles */
+  .content {
+    text-align: center;
+  }
+
+  /* Button styles */
+  .button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .button:hover {
+    background-color: #005ea6;
+  }
+
+  /* Label styles */
+  .label {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  /* Product description styles */
+  .product-description {
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* Image styles */
+  .same-size-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+/*gallery*/
+.gallery-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery {
+    display: flex;
+    animation: moveGallery linear 20s infinite;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes moveGallery {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+  
+         
