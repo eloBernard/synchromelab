@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CI/CD Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            margin-top: 20px;
+            padding-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-bottom: 10px;
+        }
+
+        main {
+            float: left;
+            width: 70%;
+            margin-top: 20px;
+        }
+
+        .section {
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        @media screen and (max-width: 768px) {
+            nav, main {
+                width: 100%;
+            }
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CI/CD Overview</h1>
+    </header>
+
+    <div class="container">
+       
+
+        <main>
+            <section id="ci" class="section">
+                <h2>Continuous Integration (CI)</h2>
+                <p>Continuous Integration is the practice of frequently integrating code changes into a shared repository. Each integration triggers automated builds and tests, ensuring early detection of errors and maintaining code quality.</p>
+            </section>
+
+            <section id="cd" class="section">
+                <h2>Continuous Deployment (CD)</h2>
+                <p>Continuous Deployment is the practice of automatically deploying code changes to production or staging environments after passing automated tests. It enables faster delivery of features and improvements to end-users.</p>
+            </section>
+
+            <section id="example" class="section">
+                <h2>Example</h2>
+                <p>Suppose you have a web application hosted on GitHub. With CI/CD:</p>
+                <ol>
+                    <li>Every code push triggers a CI pipeline, which runs automated tests on the codebase.</li>
+                    <li>If the tests pass, the CD pipeline automatically deploys the changes to the production server.</li>
+                </ol>
+            </section>
+
+            <section id="use" class="section">
+                <h2>How to Use CI/CD</h2>
+                <p>To implement CI/CD:</p>
+                <ol>
+                    <li>Choose a CI/CD tool like Jenkins, Travis CI, CircleCI, or GitLab CI/CD.</li>
+                    <li>Configure your CI/CD pipeline to perform automated builds, tests, and deployments.</li>
+                    <li>Integrate the CI/CD pipeline into your version control system (e.g., GitHub, GitLab) to trigger builds on code changes.</li>
+                    <li>Monitor the pipeline for failures and continuously improve it to optimize the development workflow.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 CI/CD Overview</p>
+    </footer>
+</body>
+</html>
