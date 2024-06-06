@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
    
    
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #E0FFFF;
-   
+    background-image: linear-gradient(to right top, #1297a8, #358b91,#35b6c7, #2970b3, #0f55eb);
 }
 .header-container {
     display: flex;
@@ -18,26 +18,24 @@ body {
     position: relative;
     padding-bottom: 25px;
     padding-top: 8px;
-    background-color: #20B2AA;
+    background-color: #2f97b1;
     overflow: hidden;
 }
 .logo {
     position: absolute;
     left: 4px;
     top: 0;
-    padding: 3px 3px 3px;
+    padding: 4px 3px 5px;
     padding-top: 3px;
 }
 .header {
     margin: 0;
     padding: 13px 25px;
-   
-    
+    color: white;
 }
 
-
 nav {
-    background-color: teal;
+    background-color: #0e11c2;
     margin: 0;
     padding: 0;
 }
@@ -61,11 +59,10 @@ nav ul li a {
     display: block;
     padding: 8px;
     font-size: 16px; /* Adjust the font size as needed */
-    
 }
 
 nav ul li a:hover {
-    background-color: cyan;
+  background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);   
 }
 
 nav ul li input, nav ul li button {
@@ -107,19 +104,21 @@ nav ul li input, nav ul li button {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    background-color: #555;
+    background-color: #5c4c4c;
+  
     color: white;
     cursor: pointer;
 }
 
 .search-container button:hover {
-    background-color: #777;
+    background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
 }
  /*banner*/
 
 .banner {
     text-align: center;
     padding: 4px;
+    color: white;
 }
 
 .banner .banner-text {
@@ -296,7 +295,7 @@ footer .container-fluid h3{
   }
 
   .social-button {
-    background-color: #4CAF50;
+    background-color: #2912fc;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -307,7 +306,7 @@ footer .container-fluid h3{
   }
 
   .social-button:hover {
-    background-color: #45a049;
+    background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
   }
 /*footer/*/
 .container {
@@ -325,7 +324,7 @@ footer .container-fluid h3{
   }
 
   .login-button, .password-button {
-    background-color: #4CAF50;
+    background-color: #064ee9;
     color: white;
     padding: 10px 20px;
     font-size: 16px;
@@ -338,7 +337,7 @@ footer .container-fluid h3{
 
 
   .login-button:hover, .password-button:hover {
-    background-color: #45a049;
+    background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
   }
 
   .contact-info {
@@ -350,7 +349,7 @@ footer .container-fluid h3{
   }
 
   .button {
-    background-color: #0074d9;
+    background-color: #2912fc;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -360,7 +359,8 @@ footer .container-fluid h3{
   }
 
   .button:hover {
-    background-color: #005ea6;
+    background-image: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);
   }
 
   /*login contianer*/
+ /*dockerlogog*/
