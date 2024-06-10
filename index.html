@@ -28,10 +28,10 @@
             <li><a href="#">Container</a></li>
             <li><a href="#">Cloud</a></li>
             <li><a href="login.php">Login</a></li>
-        <div class="search-container">
-              <input type="text" id="searchBox" placeholder="Search...">
+            <li class="search-container">
+              <input class="searc-container" type="text" id="searchBox" placeholder="Search...">
               <button onclick="searchContent()">Search</button>
-        </div>        
+          </li>
         </ul>
     </nav>
     <br> 
@@ -173,113 +173,110 @@
             </div>
 
            </div>
-  <br>
-      
-              
-           <div class="container col-xs-16" style="margin-top:40px;">
-            <div class="container">
-              <div class="column">
-                <div class="content">
-                    <img src="dockeri.PNG" alt="Photo 1" class="same-size-image">
-                    <div class="label">Discover Docker</div>
-                    <div class="product-description">Plateforme pour développer, expédier et exécuter des applications dans des conteneurs.</div>
-                    <button class="button" onclick="DockerInfo()">Docker Info</button>
-                    <div id="dockerInfo" class="docker-info">
-                        <p>L'utilisation de conteneurs pour déployer des applications s'appelle la containerisation. Les conteneurs sont légers et contiennent tout ce qui est nécessaire pour exécuter l'application, y compris les outils système et le code et les bibliothèques. Docker simplifie le processus de création, d'expédition et d'exécution des applications en fournissant un cadre commun pour les empaqueter et les exécuter.</p>
-                    </div>
+
+<br>
+<div class="container" style="margin-top:40px;">
+    <div class="columns">
+        <div class="column">
+            <div class="content">
+                <img src="dockeri.PNG" alt="Photo 1" class="same-size-image">
+                <div class="label">Discover Docker</div>
+                <div class="product-description">Plateforme pour développer, expédier et exécuter des applications dans des conteneurs.</div>
+                <button class="button" onclick="DockerInfo()">Docker Info</button>
+                <div id="dockerInfo" class="docker-info" style="display: none;">
+                    <p>L'utilisation de conteneurs pour déployer des applications s'appelle la containerisation. Les conteneurs sont légers et contiennent tout ce qui est nécessaire pour exécuter l'application, y compris les outils système et le code et les bibliothèques. Docker simplifie le processus de création, d'expédition et d'exécution des applications en fournissant un cadre commun pour les empaqueter et les exécuter.</p>
                 </div>
             </div>
-            <div class="column">
-                <div class="content">
-                    <img src="jenkis.PNG" alt="Photo 2" class="same-size-image">
-                    <div class="label">Discover Jenkins</div>
-                    <div class="product-description">Serveur d'automatisation open-source pour la construction, les tests et le déploiement d'applications.</div>
-                    <button class="button" onclick="JenkinsInfo()">Jenkins Info</button>
-                    <div id="jenkinsInfo" class="jenkins-info">
-                        <p>Jenkins est un outil open source de serveur d'automatisation. Il aide à automatiser les parties du développement logiciel liées au build, aux tests et au déploiement, et facilite l'intégration continue et la livraison continue. Écrit en Java, Jenkins fonctionne dans un conteneur de servlets tel qu’Apache Tomcat, Nginx ou en mode autonome avec son propre serveur Web embarqué.</p>
-                    </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="jenkis.PNG" alt="Photo 2" class="same-size-image">
+                <div class="label">Discover Jenkins</div>
+                <div class="product-description">Serveur d'automatisation open-source pour la construction, les tests et le déploiement d'applications.</div>
+                <button class="button" onclick="JenkinsInfo()">Jenkins Info</button>
+                <div id="jenkinsInfo" class="jenkins-info" style="display: none;">
+                    <p>Jenkins est un outil open source de serveur d'automatisation. Il aide à automatiser les parties du développement logiciel liées au build, aux tests et au déploiement, et facilite l'intégration continue et la livraison continue. Écrit en Java, Jenkins fonctionne dans un conteneur de servlets tel qu’Apache Tomcat, Nginx ou en mode autonome avec son propre serveur Web embarqué.</p>
                 </div>
             </div>
-           
-            <div class="column">
-                <div class="content">
-                    <img src="ansibleicon.PNG" alt="Photo 3" class="same-size-image">
-                    <div class="label">Discover Ansible</div>
-                    <div class="product-description">Outil open-source pour l'automatisation de la fourniture de logiciels, la gestion de la configuration et le déploiement des applications.</div>
-                    <button class="button" onclick="AnsibleInfo()">Ansible Info</button>
-                    <div id="ansibleInfo" class="ansible-info">
-                        <p>Ansible est un moteur d’automatisation informatique open source qui automatise le provisionnement, la gestion de la configuration, le déploiement des applications, l’orchestration et de nombreux autres processus informatiques.  Les modules communiquent via la sortie standard en notation JSON et le système utilise YAML pour exprimer des descriptions réutilisables de systèmes, appelées playbook.</p>
-                    </div>
+        </div>
+        <div class="column">
+            <div class="content">
+                <img src="ansibleicon.PNG" alt="Photo 3" class="same-size-image">
+                <div class="label">Discover Ansible</div>
+                <div class="product-description">Outil open-source pour l'automatisation de la fourniture de logiciels, la gestion de la configuration et le déploiement des applications.</div>
+                <button class="button" onclick="AnsibleInfo()">Ansible Info</button>
+                <div id="ansibleInfo" class="ansible-info" style="display: none;">
+                    <p>Ansible est un moteur d’automatisation informatique open source qui automatise le provisionnement, la gestion de la configuration, le déploiement des applications, l’orchestration et de nombreux autres processus informatiques. Les modules communiquent via la sortie standard en notation JSON et le système utilise YAML pour exprimer des descriptions réutilisables de systèmes, appelées playbook.</p>
                 </div>
             </div>
-       </div>
-      
-      </div>
-        <script>
-            function DockerInfo() {
-                var dockerInfoDiv = document.getElementById("dockerInfo");
-                if (dockerInfoDiv.style.display === "none") {
-                    dockerInfoDiv.style.display = "block";
-                } else {
-                    dockerInfoDiv.style.display = "none";
-                }
-            }
-      
-            function JenkinsInfo() {
-                var jenkinsInfoDiv = document.getElementById("jenkinsInfo");
-                if (jenkinsInfoDiv.style.display === "none") {
-                    jenkinsInfoDiv.style.display = "block";
-                } else {
-                    jenkinsInfoDiv.style.display = "none";
-                }
-            }
-      
-           
- function AnsibleInfo() {
-  var ansibleInfoDiv = document.getElementById("ansibleInfo");
-  if (ansibleInfoDiv.style.display === "none") {
-      ansibleInfoDiv.style.display = "block";
-  } else {
-      ansibleInfoDiv.style.display = "none";
-  }
-}
+        </div>
+    </div>
+</div>
+<script>
+    function DockerInfo() {
+        var dockerInfoDiv = document.getElementById("dockerInfo");
+        if (dockerInfoDiv.style.display === "none") {
+            dockerInfoDiv.style.display = "block";
+        } else {
+            dockerInfoDiv.style.display = "none";
+        }
+    }
+
+    function JenkinsInfo() {
+        var jenkinsInfoDiv = document.getElementById("jenkinsInfo");
+        if (jenkinsInfoDiv.style.display === "none") {
+            jenkinsInfoDiv.style.display = "block";
+        } else {
+            jenkinsInfoDiv.style.display = "none";
+        }
+    }
+
+    function AnsibleInfo() {
+        var ansibleInfoDiv = document.getElementById("ansibleInfo");
+        if (ansibleInfoDiv.style.display === "none") {
+            ansibleInfoDiv.style.display = "block";
+        } else {
+            ansibleInfoDiv.style.display = "none";
+        }
+    }
 </script>
+<br>
 
-<br> 
- 
-
-
-           <div class="container-fluid col-lg-16 col-lg-offset-1">
-                <div class="row">
-                  <hr>
-                  <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-map-marker"></span>
-                    <h3 class="text-center">&nbsp;TRACK YOUR ORDER</h3>
-                  </div>
-                  
-                  <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-refresh"></span>
-                    <h3 class="text-center">&nbsp;&nbsp;FREE & EASY RETURNS</h3>
-                        
-                      </div>
-                  
-                  <div class="col-sm-4">
-                    <span class="glyphicon glyphicon-remove-circle"></span>
-                    <h3 class="text-center">ONLINE CANCELLATIONS</h3>
-                  </div>
-                    </div>
-                  </div>
-                  <br>
-          <hr>
-                  <footer>
-            <div class="social-buttons">
-              <a href="https://facebook.com" target="_blank" class="social-button">Simplon</a>
-              <a href="https://twitter.com" target="_blank" class="social-button">Linkedin</a>
-              <a href="Contact" target="_blank" class="social-button">Contact</a>
-              <!-- Add more social buttons as needed -->
-            </div>
-            <hr>
-            <p>&copy; 2024 - Eloisa BERNARDEZ. All rights reserved.</p>
-           </footer>
-    <script src="script.js"></script>
+<div class="container-fluid col-lg-16 col-lg-offset-1">
+    <div class="row">
+      <hr>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-map-marker"></span>
+        <h3 class="text-center">&nbsp;TRACK YOUR ORDER</h3>
+      </div>
+      
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-refresh"></span>
+        <h3 class="text-center">&nbsp;&nbsp;FREE & EASY RETURNS</h3>
+            
+          </div>
+      
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-remove-circle"></span>
+        <h3 class="text-center">ONLINE CANCELLATIONS</h3>
+      </div>
+        </div>
+      </div>
+      <br>
+<hr>
+      <footer>
+<div class="social-buttons">
+  <a href="https://facebook.com" target="_blank" class="social-button">Simplon</a>
+  <a href="https://twitter.com" target="_blank" class="social-button">Linkedin</a>
+  <a href="Contact" target="_blank" class="social-button">Contact</a>
+  <!-- Add more social buttons as needed -->
+</div>
+<hr>
+<p>&copy; 2024 - Eloisa BERNARDEZ. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
 </body>
+</html>
+
+             
+           
