@@ -5,9 +5,6 @@ body {
   background: linear-gradient(to right, #1297a8, #2f87c2e3,#3156d1, #0888dde5); /* Example gradient */
   min-height: 100vh;
 }
-
-
-
 .header-container {
   display: flex;
   align-items: center;
@@ -30,14 +27,12 @@ body {
   padding: 13px 25px;
   color: white;
 }
-
 nav {
   background-color: #0e11c2;
   overflow: hidden;
   /*margin: 0;
   /*padding: 0;*/
 }
-
 nav ul {
   display: flex;
   justify-content: space-around;
@@ -48,12 +43,10 @@ nav ul {
   margin: 0;
   padding: 0;
 }
-
 nav ul li {
   flex: 1;
   text-align: center;
 }
-
 nav ul li a {
   color: white;
   text-decoration: none;
@@ -61,32 +54,24 @@ nav ul li a {
   padding: 14px 14px;
   font-size: 16px; /* Adjust the font size as needed */
 }
-
 nav ul li a:hover {
 background: linear-gradient(to right top, #d0d635, #edac1e, #fa8034, #f65353, #de2d72);   
 overflow: hidden;
 }
-
 nav ul li input, nav ul li button {
   flex: 1;
   padding: 8px;
   margin: 0 5px;
-  
 }
-
-
-
 
 .container {
   width: 100%;
   padding: 20px;
 }
-
 .columns {
   display: flex;
   justify-content: space-around;
 }
-
 .column {
   flex: 1;
   margin: 0 10px;
@@ -100,28 +85,23 @@ nav ul li input, nav ul li button {
   flex-direction: column;
   align-items: center;
 }
-
 .content {
   text-align: center;
 }
-
 .same-size-image {
   max-width: 100%;
   height: auto;
   display: block;
   margin-bottom: 20px;
 }
-
 .label {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
 .product-description {
   margin-bottom: 20px;
 }
-
 .button {
   background-color: #4CAF50;
   color: white;
@@ -130,24 +110,14 @@ nav ul li input, nav ul li button {
   padding: 10px 20px;
   cursor: pointer;
 }
-
 .button:hover {
   background-color: #45a049;
 }
-
 .docker-info, .jenkins-info, .ansible-info {
   display: none;
   margin-top: 20px;
   text-align: left;
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 768px) {
     header {
@@ -242,7 +212,6 @@ nav ul li input, nav ul li button {
    /* overflow: hidden;*/
     animation: moveGallery 18s linear infinite;
 }
-
 .gallery img {
     width: 130px;
     height: 100px;
@@ -250,7 +219,6 @@ nav ul li input, nav ul li button {
     margin-left: 12px;
     transition: transform 0.4s ease;
 }
-
 .gallery img:hover {
     transform: scale(1.2);
 }
@@ -263,7 +231,6 @@ nav ul li input, nav ul li button {
         transform: translateX(-100%);
     }
 }
-
 
 footer{
   position:relative;
@@ -320,10 +287,7 @@ footer .container-fluid h3{
     background-color: white;
 }
 
-
-
-     
-        /**change here up*/
+       /**change here up*/
 /* Responsive container for columns */
 .container {
     max-width: 1200px;
