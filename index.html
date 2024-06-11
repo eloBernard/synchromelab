@@ -73,7 +73,7 @@
                 <div class="panel-body">
                   <div class="col-sm-16">
                     <h3>DEVOPS</h3>
-                  <p>Le DevOps est une combinaison de pratiques et d'outils qui améliore la capacité d'une entreprise à livrer des applications et des services à un rythme élevé, pour s'améliorent plus rapidement de développement de logiciel et de gestion d'infrastructure. Les outils DevOps sont des applications logicielles qui aident à automatiser, gérer et améliorer l'efficacité des différentes étapes du cycle de vie du développement logiciel (SDLC), de la conception et des tests au déploiement et à la surveillance. Voici quelques outils DevOps couramment utilisés, classés par leur fonction :</p>
+                  <p>Le terme DevOps est la contraction de développement (Dev) et opérations (Ops). L'objectif de DevOps est d'améliorer la communication et la collaboration entre ces deux équipes pour accroître l'efficacité et la productivité.  Le DevOps est une combinaison de pratiques et d'outils qui améliore la capacité d'une entreprise à livrer des applications et des services à un rythme élevé, pour s'améliorent plus rapidement de développement de logiciel et de gestion d'infrastructure. Le rôle du DevOps est d'adopter cette méthode auprès des développeurs et de l'équipe de production. Il optimise le processus de développement et accélère le déploiement des applications en assurant leur fiabilité, notamment par l'automatisation des tâches.  Les outils DevOps sont des applications logicielles qui aident à automatiser, gérer et améliorer l'efficacité des différentes étapes du cycle de vie du développement logiciel (SDLC), de la conception et des tests au déploiement et à la surveillance. Voici quelques outils DevOps couramment utilisés, classés par leur fonction :</p>
                   </div>               
                 </div>
                 <hr>
@@ -101,9 +101,15 @@
                     
                     <div class="col-sm-8">
                       <h3>AUTOMATISATION</h3>
-                      <p>Kubernetes est une plateforme open source d'orchestration de containers créé par Google. Découvrez son utilité, son fonctionnement, ainsi que ses différences avec Docker.  Kubernetes est un projet Open Source créé par Google en 2015. Il permet d'automatiser le déploiement et la gestion d'applications multi-container à l'échelle. Il s'agit d'un système permettant d'exécuter et de coordonner des applications containerisées sur un cluster de machines. C'est une plateforme conçue pour gérer entièrement le cycle de vie des applications et services containerisés en utilisant des méthodes de prédictibilité, de scalabilité et de haute disponibilité.
-     
-                       Principalement compatible avec Docker, Kubernetes peut fonctionner avec n'importe quel système de container conforme au standard Open Container Initiative en termes de formats d'images et d'environnements d'exécution.</p>
+                      <p>Ansible est un outil d'automatisation open source pour le provisionnement, la gestion de la configuration, le déploiement des applications, l'orchestration et d'autres processus informatiques. Gratuit et enrichi par de nombreux contributeurs, Ansible simplifie les tâches automatisées avec des scripts appelés playbooks. Il permet d'éliminer les tâches répétitives, de maintenir la configuration système, de déployer des logiciels en continu et de réaliser des mises à jour sans interruption.
+                        <br>   
+                        Les principes clés d'Ansible incluent :
+                        
+                        Architecture sans agent, pas besoin d'installer de logiciels supplémentaires.
+                        Simplicité, utilise une syntaxe YAML facile à lire.
+                        Évolutivité et flexibilité, s'adapte à de nombreux systèmes et plateformes.
+                        Idempotence et prévisibilité, assure que le système reste dans l'état désiré sans changement supplémentaire.
+                        Ansible est conçu pour être simple, flexible, et efficace pour gérer et automatiser une variété de tâches informatiques.</p>
                     </div>
                     
                   </div>
@@ -143,11 +149,11 @@
               <div class="col-sm-16">
                  <div class="col-sm-8">
                  <h3>MONITORING & SECURITE</h3>
-                 <p>Terraform est un outil d’infrastructure en tant que code (IaC) qui vous permet de définir des ressources à la fois dans le cloud et sur site à l’aide de fichiers de configuration lisibles. Terraform est un outil de codage déclaratif qui permet aux développeurs d’utiliser un langage de configuration de haut niveau appelé HCL (HashiCorp Configuration Language) pour décrire « l’état final » souhaité de l’infrastructure cloud ou locale afin d’exécuter une application. Un plan est alors généré pour atteindre cet état final et le plan de provisionnement de l’infrastructure est exécuté.  Terraform, permet de créer, gérer et versionner des ressources d’infrastructure de manière cohérente et automatisée. En plus, c'est utiliser pour déployer des applications sur des fournisseurs cloud populaires.</p>
+                 <p>Zabbix est une solution de supervision professionnelle.  C'est un logiciel qui permet de superviser de nombreux paramètres d'un réseau ainsi que la santé et l'intégrité des serveurs, des machines virtuelles, des applications, des bases de données, etc.  Zabbix utilise un mécanisme de notification flexible qui permet aux utilisateurs de configurer une alerte, ceci permet une réponse rapide aux problèmes serveurs. Zabbix offre un excellent reporting et des fonctionnalités de visualisation de données basées sur les données stockées. Tous les rapports et statistiques comme la configuration de paramètres, sont accessibles par l'interface web, qui veille à ce que le statut de votre réseau et de vos serveurs puisse être évalué depuis n'importe quel endroit, qui peux jouer un rôle important dans la supervision de l'infrastructure IT.</p>
                </div>
                  
                <div class="col-sm-4">
-                 <img src="zabbix.PNG" class="img-responsive" alt="">
+                 <img src="zabbixicon.PNG" class="img-responsive" alt="">
                </div>
                  
                </div>
@@ -251,7 +257,7 @@
               <div class="product-description">Serveur d'automatisation open-source pour la construction, les tests et le déploiement d'applications.</div>
               <button class="button" onclick="KubernetesInfo()">Kubernetes Info</button>
               <div id="kubernetesInfo" class="kubernetes-info" style="display: none;">
-                  <p>Kubernetes est un outil open source de serveur d'automatisation. Il aide à automatiser les parties du développement logiciel liées au build, aux tests et au déploiement, et facilite l'intégration continue et la livraison continue. Écrit en Java, Jenkins fonctionne dans un conteneur de servlets tel qu’Apache Tomcat, Nginx ou en mode autonome avec son propre serveur Web embarqué.</p>
+                  <p>Kubernetes est une plateforme open source d'orchestration de containers créé par Google. Découvrez son utilité, son fonctionnement, ainsi que ses différences avec Docker.  Kubernetes est un projet Open Source créé par Google en 2015.   Il aide à automatiser les parties du développement logiciel liées au build, aux tests et au déploiement, et facilite l'intégration continue et la livraison continue. Écrit en Java, Jenkins fonctionne dans un conteneur de servlets tel qu’Apache Tomcat, Nginx ou en mode autonome avec son propre serveur Web embarqué. Il s'agit d'un système permettant d'exécuter et de coordonner des applications containerisées sur un cluster de machines et principalement compatible avec Docker.</p>
               </div>
           </div>
       </div>
@@ -296,35 +302,39 @@
       }
   }
 </script>
-<br>
 
-<div class="container-fluid col-lg-16 col-lg-offset-1">
+
+<!--<br>
+    <div class="container-fluid col-lg-12 col-lg-offset-1">
     <div class="row">
       <hr>
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-map-marker"></span>
-        <h3 class="text-center">&nbsp;TRACK YOUR ORDER</h3>
+        <h3 class="text-center">&nbsp;&nbsp;Simplon.Co</h3>
       </div>
       
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-refresh"></span>
-        <h3 class="text-center">&nbsp;&nbsp;FREE & EASY RETURNS</h3>
+        <h3 class="text-center">&nbsp;&nbsp;A Propos</h3>
             
           </div>
       
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-remove-circle"></span>
-        <h3 class="text-center">ONLINE CANCELLATIONS</h3>
+        <h3 class="text-center">&nbsp;&nbsp;Contactez-moi</h3>
       </div>
         </div>
       </div>
-      <br>
-<hr>
+      <br>//-->
+
       <footer>
+        <hr>
 <div class="social-buttons">
-  <a href="https://facebook.com" target="_blank" class="social-button">Simplon</a>
-  <a href="https://twitter.com" target="_blank" class="social-button">Linkedin</a>
-  <a href="Contact" target="_blank" class="social-button">Contact</a>
+  <a href="https://github.com" target="_blank" class="social-button">Simplon.Co</a>
+  <a href="https://facebook.com" target="_blank" class="social-button">Facebook</a>
+  <a href="https://linkedin.com" target="_blank" class="social-button">Linkedin</a>
+  <a href="https://linkedin.com" target="_blank" class="social-button">Contact</a>
+  <a href="https://linkedin.com" target="_blank" class="social-button">A Propos</a>
   <!-- Add more social buttons as needed -->
 </div>
 <hr>
@@ -334,8 +344,3 @@
 </body>
 </html>
 
-
-               
-
-             
-           

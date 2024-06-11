@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
+         body {
             font-family: Arial, sans-serif;
-            background-color: #008080; /* Teal color background */
-            color: #fff; /* White text color */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2f87c2e3, #1297a8, #16c3eee5, #3156d1, #590de7); /* Example gradient */
+  min-height: 100vh;
+        }
+      
+        .header-container {
+            display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 12px;
+  /*background-color: #2f97b1;   #2f97b1, #632fb1, #b12f63, #b1972f;*/
+  background: linear-gradient(to right,  #2f97b1, #632fb1, #da5636, #dde02f); 
+  overflow: hidden;
         }
 
+        .logo {
+            position: absolute;
+  left: 4px;
+  top: 0;
+  padding: 4px 3px 5px;
+  padding-top: 3px;
+        }
+
+        .header {
+            margin: 0;
+            padding: 13px 25px;
+            color: white;
+        }
+        
         .login {
             width: 80%;
             max-width: 600px;
@@ -40,6 +66,12 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <img src="devlog.png" alt="Logo" class="logo" width="100" height="100">
+            <h1 class="header">Synchrome</h1>
+        </div>
+    </header>
     <div class="login">
         <?php
         // Example PHP code to handle login functionality
