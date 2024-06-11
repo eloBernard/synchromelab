@@ -13,6 +13,29 @@
             color: #fff; /* White text color */
         }
 
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px 0 25px;
+            background: linear-gradient(to right, #2f97b1, #632fb1, #da5636, #dde02f); 
+            overflow: hidden;
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            left: 4px;
+            top: 0;
+            padding: 4px 3px 5px;
+        }
+
+        .header {
+            margin: 0;
+            padding: 13px 25px;
+            color: white;
+        }
+
         .login {
             width: 80%;
             max-width: 600px;
@@ -40,6 +63,12 @@
     </style>
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <img src="devlog.png" alt="Logo" class="logo" width="100" height="100">
+            <h1 class="header">Synchrome</h1>
+        </div>
+    </header>
     <div class="login">
         <?php
         // Example PHP code to handle login functionality
