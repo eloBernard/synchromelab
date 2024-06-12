@@ -31,14 +31,13 @@
   top: 0;
   padding: 4px 3px 5px;
   padding-top: 3px;
-        }
+  }
 
         .header {
             margin: 0;
             padding: 13px 25px;
             color: white;
         }
-
         .container {
             display: flex;
             justify-content: center;
@@ -71,7 +70,8 @@
         }
 
         p, li {
-            color: #555;
+            color: #000000;
+           
         }
 
         a {
@@ -83,40 +83,81 @@
         a:hover {
             border-bottom: 1px solid transparent;
         }
+        .center-content {
+            text-align: center;
+            padding: 20px;
+            
+        }  
+
+        h4 {
+            margin: 0 auto;
+            width: 75%;
+            text-align: justify;
+            color: #212F3C;
+        }
+        img cloud{
+            width: 75%;
+            padding-top: 5px;
+            margin: auto;
+        }
     </style>
 </head>
-<body>
-    <header>
-        <div class="header-container">
-            <img src="devlog.png" alt="Logo" class="logo" width="100" height="100">
-            <h1 class="header">Synchrome</h1>
-        </div>
-    </header>
 
+
+    <body>
+        <header>
+           <div class="header-container">
+               <img logo src="devlog.png" alt="Logo" class="logo" width="100" height="100">
+               <h1 class="header">Synchrome</h1>
+           </div>
+       </header>
+    <div class="center-content">
+        <h1>Cloud Computing </h1>
+      <h4>L'accès à des ressources informatiques (serveurs, stockage, bases de données, etc.) via Internet, permettant la flexibilité, la scalabilité, et la réduction des coûts en payant uniquement pour ce que vous utilisez qui contribue a la réduction des coûts.</h4>
+      </div>
     <div class="container">
         <section id="purpose" class="section">
-            <h2>Purpose of Cloud Computing</h2>
-            <p>Cloud computing provides a way to access various computing resources over the internet. These resources include servers, storage, databases, networking, software, and more. The main purposes of cloud computing are:</p>
+            <h2>Avantages de Cloud Computing</h2>
+            <p>Cloud computing fournit un moyen d'accéder à diverses ressources informatiques via Internet. Ces ressources incluent des serveurs, du stockage, des bases de données, des réseaux, des logiciels, et plus encore. Les principaux objectifs de l'informatique en Cloud sont les suivants :</p>
             <ul>
-                <li><strong>Scalability:</strong> Easily scale resources up or down based on demand.</li>
-                <li><strong>Cost Efficiency:</strong> Pay only for the resources you use, reducing capital expenditure.</li>
-                <li><strong>Flexibility:</strong> Access resources from anywhere with an internet connection.</li>
-                <li><strong>Reliability:</strong> Benefit from robust infrastructure with high availability and disaster recovery options.</li>
-                <li><strong>Speed:</strong> Deploy and manage applications quickly without the need for on-premises hardware.</li>
+                <li><strong>Scalabilité :</strong> Évoluer facilement les ressources à la hausse ou à la baisse en fonction de la demande.</li><br>
+                <li><strong>Efficacité des coûts :</strong> Payer uniquement pour les ressources utilisées, réduisant ainsi les dépenses en capital.</li><br>
+                <li><strong>Flexibilité :</strong> Accéder aux ressources de n'importe où avec une connexion Internet.</li><br>
+                <li><strong>Reliabilité :</strong> Bénéficier d'une infrastructure robuste avec une haute disponibilité et des options de reprise après sinistre.</li><br>
+                <li><strong>Speed:</strong> Déployer et gérer des applications rapidement sans avoir besoin de matériel sur site.</li><br>
             </ul>
         </section>
 
         <section id="providers" class="section">
-            <h2>Different Cloud Providers</h2>
-            <p>Several major cloud providers offer a wide range of cloud services. Some of the most popular cloud providers are:</p>
+            <h2>Différents fournisseurs de cloud</h2>
+            <p>Plusieurs grands fournisseurs de cloud offrent une large gamme de services cloud. Certains des fournisseurs de cloud les plus populaires sont :</p>
             <ul>
-                <li><strong>Amazon Web Services (AWS):</strong> A comprehensive and widely adopted cloud platform offering over 200 fully featured services from data centers globally.</li>
-                <li><strong>Microsoft Azure:</strong> A growing collection of integrated cloud services and computing resources such as analytics, storage, and networking.</li>
-                <li><strong>Google Cloud Platform (GCP):</strong> Offers a suite of cloud computing services that run on the same infrastructure that Google uses internally for its end-user products.</li>
-                <li><strong>IBM Cloud:</strong> Provides a full-stack cloud platform with over 170 products and services covering data, containers, AI, IoT, and blockchain.</li>
-                <li><strong>Oracle Cloud:</strong> Offers a comprehensive and fully integrated stack of cloud applications and platform services.</li>
+                <li><strong>Amazon Web Services (AWS) :</strong> Une plateforme cloud complète et largement adoptée offrant plus de 200 services complets à partir de centres de données mondiaux.</li><br>
+                <li><strong>Microsoft Azure :</strong>  Une collection croissante de services cloud intégrés et de ressources informatiques tels que l'analyse, le stockage et les réseaux.</li><br>
+                <li><strong>OVH - "On Vous Héberge" : </strong> une entreprise française spécialisée dans les services de cloud computing, d'hébergement web et de serveurs dédiés. Fondée en 1999, OVH propose une large gamme de services, notamment des infrastructures de cloud public et privéet des outils pour la gestion des données.  OVH est devenue l'un des plus grands fournisseurs de services d'hébergement en Europe et propose une large gamme de solutions pour les entreprises de toutes tailles.</li><br> 
+                <li><strong>Google Cloud Platform (GCP) :</strong> Offre une suite de services de cloud computing qui fonctionnent sur la même infrastructure que Google utilise en interne pour ses produits destinés aux utilisateurs finaux.</li><br>
+                <li><strong>IBM Cloud :</strong> Fournit une plateforme cloud complète avec plus de 170 produits et services couvrant les données, les conteneurs, l'IA, l'IoT et la blockchain.</li><br>
+                <li><strong>Oracle Cloud :</strong> Offre une pile complète et entièrement intégrée d'applications cloud et de services de plateforme.</li><br>
             </ul>
         </section>
+
+        <section id="providers" class="section">
+            <h2>Deployé une application vers Cloud</h2>
+            <h4>Exemple des etapes à suivre en utilisant AWS Cloud :</h4>
+            <ul>
+                <li><strong>Connexion à la console AWS :</strong> Connectez-vous à la console de gestion AWS.</li><br>
+                <li><strong>Lancement de l'instance :</strong>  Accédez au service EC2 et cliquez sur "Lancer une instance".</li><br>
+                <li><strong>Choix de l'AMI (Amazon Machine Image):</strong> Sélectionnez une image de machine Amazon préconfigurée, comme Amazon Linux 2 AMI.</li><br>
+                <li><strong>Choix du type d'instance :</strong> Sélectionnez le type d'instance, comme t2.micro, qui est éligible à l'offre gratuite AWS.</li><br>
+                <li><strong>Configuration des détails de l'instance :</strong> Configurez les paramètres de l'instance selon vos besoins.</li><br>
+                <li><strong>Configuration des balises :</strong> Ajoutez des volumes de stockage supplémentaires si nécessaire.</li><br>
+                <li><strong>Configuration des balises :</strong>  Ajoutez des balises pour organiser vos instances.</li><br>
+                <li><strong>Configuration du groupe de sécurité :</strong>  Configurez les règles de pare-feu pour permettre le trafic HTTP et HTTPS.</li><br>
+                <li><strong>Revue et lancement :</strong>  Passez en revue les paramètres de votre instance et lancez l'instance.</li><br>
+            </ul>
+        
+        </section>
+        <img src="ec2.PNG" alt="ec2" class="cloud">
     </div>
 
     <footer>

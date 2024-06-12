@@ -3,140 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Computing Overview</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Container Overview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2f87c2e3, #1297a8, #16c3eee5, #3156d1, #590de7); /* Example gradient */
+  min-height: 100vh;
+        }
+      
+        .header-container {
+            display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 12px;
+  /*background-color: #2f97b1;   #2f97b1, #632fb1, #b12f63, #b1972f;*/
+  background: linear-gradient(to right,  #2f97b1, #632fb1, #da5636, #dde02f); 
+  overflow: hidden;
+        }
+
+        .logo {
+            position: absolute;
+  left: 4px;
+  top: 0;
+  padding: 4px 3px 5px;
+  padding-top: 3px;
+  }
+
+        .header {
+            margin: 0;
+            padding: 13px 25px;
+            color: white;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .section {
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+           
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p, li {
+            color: #000000;
+           
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+        }
+
+        a:hover {
+            border-bottom: 1px solid transparent;
+        }
+        .center-content {
+            text-align: center;
+            padding: 20px;
+            
+        }  
+
+        h4 {
+            margin: 0 auto;
+            width: 75%;
+            text-align: justify;
+            color: #212F3C;
+        }
+        img cloud{
+            width: 75%;
+            padding-top: 5px;
+            margin: auto;
+        }
+        .content {
+  
+  text-align: center;
+  
+}
+
+ .dockerflow-info {
+ display: none;
+  margin-top: 20px;
+   text-align: justify;
+}
+     
+    </style>
 </head>
 
-    <style>
-    body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
-    
-    header {
-        background: #333;
-        color: #fff;
-        padding: 10px 0;
-        text-align: center;
-    }
-    
-    .container {
-        width: 80%;
-        margin: auto;
-        overflow: hidden;
-    }
-    
-    nav {
-        float: left;
-        width: 30%;
-        margin-top: 20px;
-        padding-right: 20px;
-    }
-    
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    
-    nav ul li {
-        margin-bottom: 10px;
-    }
-    
-    nav ul li a {
-        color: #333;
-        text-decoration: none;
-        border-bottom: 1px solid #333;
-        padding-bottom: 2px;
-    }
-    
-    nav ul li a:hover {
-        border-bottom: 1px solid transparent;
-    }
-    
-    main {
-        float: left;
-        width: 70%;
-        margin-top: 20px;
-    }
-    
-    .section {
-        padding: 20px;
-        background: #fff;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    
-    h2 {
-        color: #333;
-    }
-    
-    p, li {
-        color: #555;
-    }
-    
-    footer {
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 10px 0;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-    
-    @media screen and (max-width: 768px) {
-        nav, main {
-            width: 100%;
-            float: none;
-        }
-    }
-    
-</style>
-    <header>
-        <h1>Cloud Computing Overview</h1>
-    </header>
+
     <body>
+        <header>
+           <div class="header-container">
+               <img logo src="devlog.png" alt="Logo" class="logo" width="100" height="100">
+               <h1 class="header">Synchrome</h1>
+           </div>
+       </header>
+    <div class="center-content">
+        <h1>Conteneurisation</h1>
+      <h4>C'est une méthode de virtualisation qui permet d'exécuter des applications et leurs dépendances dans des environnements isolés appelés conteneurs. Ces conteneurs encapsulent le code, les bibliothèques et les configurations nécessaires à l'exécution de l'application, offrant ainsi une solution portable et cohérente indépendamment de l'infrastructure sous-jacente. Cela facilite le déploiement et la gestion des applications, en garantissant une cohérence de fonctionnement quel que soit l'environnement d'exécution.</h4>
+      </div>
     <div class="container">
-        <nav>
+        <section id="purpose" class="section">
+            <h2>Les étapes  de conteneurisation</h2>
+            <p>La conteneurisation est un processus de virtualisation léger qui permet d'emballer une application avec ses dépendances et ses bibliothèques nécessaires, le tout dans un conteneur autonome.</p>
             <ul>
-                <li><a href="#purpose">Purpose of Cloud Computing</a></li>
-                <li><a href="#providers">Different Cloud Providers</a></li>
+                <li><strong>Choix de la plateforme :</strong> Les deux principaux acteurs dans ce domaine sont <strong>Docker</strong> et <strong>Kubernetes</strong>, bien que d'autres options existent également.</li><br>
+                <li><strong>Création du Dockerfile :</strong>  Dans le cas de Docker, vous devez créer un fichier appelé dockerfile. Ce fichier contient des instructions pour construire l'image du conteneur, y compris les dépendances, les configurations et les commandes nécessaires pour exécuter votre application.</li><br>
+                <li><strong>Construction de l'image du conteneur :</strong> Une fois que le fichier dockerfile est crée,  utilisez la commande docker build pour construire l'image du conteneur à partir de ce fichier. Cela implique de télécharger les dépendances nécessaires, de configurer l'environnement et d'installer votre application dans le conteneur.</li><br>
+                <li><strong>Test de l'image :</strong> Tester l'image pour  assurer qu'elle fonctionne correctement. Vous pouvez le faire en exécutant le conteneur localement et en effectuant des tests fonctionnels ou de performance.</li><br>
+                <li><strong>Distribution de l'image :</strong> Distribuer sur un registre de conteneurs comme Docker Hub ou un registre privé. Cela permet à d'autres membres de votre équipe ou à des machines distantes d'accéder à l'image et de l'exécuter.</li><br>
+                <li><strong>Déploiement et exécution du conteneur :</strong>Enfin, vous pouvez déployer et exécuter votre conteneur sur n'importe quelle plateforme compatible avec la conteneurisation. Vous pouvez le faire localement sur votre machine de développement, sur des serveurs dans le cloud ou même sur des infrastructures de conteneurs gérées telles que Kubernetes.</li><br>
             </ul>
-        </nav>
+        </section>
 
-        <main>
-            <section id="purpose" class="section">
-                <h2>Purpose of Cloud Computing</h2>
-                <p>Cloud computing provides a way to access various computing resources over the internet. These resources include servers, storage, databases, networking, software, and more. The main purposes of cloud computing are:</p>
-                <ul>
-                    <li><strong>Scalability:</strong> Easily scale resources up or down based on demand.</li>
-                    <li><strong>Cost Efficiency:</strong> Pay only for the resources you use, reducing capital expenditure.</li>
-                    <li><strong>Flexibility:</strong> Access resources from anywhere with an internet connection.</li>
-                    <li><strong>Reliability:</strong> Benefit from robust infrastructure with high availability and disaster recovery options.</li>
-                    <li><strong>Speed:</strong> Deploy and manage applications quickly without the need for on-premises hardware.</li>
-                </ul>
-            </section>
-
-            <section id="providers" class="section">
-                <h2>Different Cloud Providers</h2>
-                <p>Several major cloud providers offer a wide range of cloud services. Some of the most popular cloud providers are:</p>
-                <ul>
-                    <li><strong>Amazon Web Services (AWS):</strong> A comprehensive and widely adopted cloud platform offering over 200 fully featured services from data centers globally.</li>
-                    <li><strong>Microsoft Azure:</strong> A growing collection of integrated cloud services and computing resources such as analytics, storage, and networking.</li>
-                    <li><strong>Google Cloud Platform (GCP):</strong> Offers a suite of cloud computing services that run on the same infrastructure that Google uses internally for its end-user products.</li>
-                    <li><strong>IBM Cloud:</strong> Provides a full-stack cloud platform with over 170 products and services covering data, containers, AI, IoT, and blockchain.</li>
-                    <li><strong>Oracle Cloud:</strong> Offers a comprehensive and fully integrated stack of cloud applications and platform services.</li>
-                </ul>
-            </section>
-        </main>
+        <section id="providers" class="section">
+            <h2>Exemple de conteneurisation avec Docker :</h2>
+            <p>Docker utilisant l'image Nginx :</p>
+            <ul>
+                <li><strong>Créez un fichier de configuration personnalisé : </strong> ex. index.html </li>
+               <li><strong>Créez un Dockerfile :</strong>  Créez un fichier Dockerfile dans le même répertoire que votre fichier index.html.</li> <br>
+                <li><strong>Construisez l'image Docker : </strong> Dans votre terminal, exécutez la commande suivante pour construire l'image Docker : <br> <img src="dockbuild.PNG" alt="dockbuild" class="cloud"></li> <br>
+                <li><strong>Exécutez le conteneur Docker :</strong>  lancez un conteneur à partir de cette image avec la commande suivante  <br> <img src="dockrun.PNG" alt="dockrun" class="cloud"></li><br>
+                <li><strong>Accedez localhost : </strong> maintenant accéder à votre application Nginx en ouvrant un navigateur web et en visitant ex: "http://localhost:8080"</li> <br>
+               
+            </ul>
+        </section>
+        <br>
+        <div>
+            <img src="dockerpipe.png" alt="dockerpipe" class="cloud">
+           
+        </div>
+        <br>
+        <br>  
+        <section id="providers" class="section">
+            <h2>Exemple de conteneurisation avec Kubernetes:</h2>
+            <p>Kubernetes utilisant l'image Nginx :</p>
+            <ul>
+                <li><strong>Créez un fichier de déploiement Kubernetes : </strong> ex. nginx-deployment.yaml </li>
+               <li><strong>Créez un service Kubernetes :</strong> ex. nginx-service.yaml <br> <img src="kubeyaml.PNG" alt="kube" class="cloud"></li> <br>
+                <li><strong>Déploiement sur Kubernetes : </strong> ces fichiers YAML sur votre cluster Kubernetes avec la commande suivante: <br> <img src="kubecode.PNG" alt="kube" class="cloud"></li> <br>
+                <li>Après avoir exécuté ces commandes, Kubernetes va déployer votre application Nginx et la rendre 
+                    accessible via le service exposé. Vous pourrez y accéder via l'adresse IP spécifique fournie par votre fournisseur
+                     de cloud</li>
+                
+               
+            </ul>
+        </section>
+        <br>
+        <img src="kubearc.PNG" alt="kubearc" class="cloud">
     </div>
 
     <footer>
-        <p>&copy; 2024 Cloud Computing Overview</p>
+        <br>
+        <p>&copy; 2024 Eloisa BERNARDEZ</p>
     </footer>
 </body>
 </html>

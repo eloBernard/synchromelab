@@ -3,52 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI/CD Overview</title>
+    <title>Cloud Computing Overview</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #2f87c2e3, #1297a8, #16c3eee5, #3156d1, #590de7); /* Example gradient */
+  min-height: 100vh;
+        }
+      
+        .header-container {
+            display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 30px;
+  padding-top: 12px;
+  /*background-color: #2f97b1;   #2f97b1, #632fb1, #b12f63, #b1972f;*/
+  background: linear-gradient(to right,  #2f97b1, #632fb1, #da5636, #dde02f); 
+  overflow: hidden;
+        }
+
+        .logo {
+            position: absolute;
+  left: 4px;
+  top: 0;
+  padding: 4px 3px 5px;
+  padding-top: 3px;
+        }
+
+        .header {
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
+            padding: 13px 25px;
+            color: white;
         }
 
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        nav {
-            float: left;
-            width: 30%;
-            margin-top: 20px;
-            padding-right: 20px;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        nav ul li {
-            margin-bottom: 10px;
-        }
-
-        main {
-            float: left;
-            width: 70%;
-            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: justify;
         }
 
         .section {
+            width: 100%;
+            max-width: 800px;
             padding: 20px;
             background: #fff;
             margin-bottom: 20px;
@@ -56,66 +58,160 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        @media screen and (max-width: 768px) {
-            nav, main {
-                width: 100%;
-            }
-        }
-
         footer {
-            background: #333;
+           
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
             width: 100%;
         }
+
+        h2 {
+            color: #333;
+        }
+
+        p, li {
+            color: #555;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+            border-bottom: 1px solid #333;
+        }
+
+        a:hover {
+            border-bottom: 1px solid transparent;
+        }
+        .center-content {
+            text-align: center;
+            padding: 20px;
+            
+        }  
+
+        h4 {
+            margin: 0 auto;
+            width: 75%;
+            text-align: justify;
+            color: #212F3C;
+                    }
+                    .image-container {
+    display: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin: auto;
+}
+    
+img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+}
+
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>CI/CD Overview</h1>
+     <header>
+        <div class="header-container">
+            <img src="devlog.png" alt="Logo" class="logo" width="100" height="100">
+            <h1 class="header">Synchrome</h1>
+        </div>
     </header>
+
+    <div class="center-content">
+        <h2>Pipeline CI/CD (Continuous Integration/Continuous Deployment) </h2>
+      <h4>Un processus automatisé qui permet de tester, intégrer et déployer du code rapidement et de manière fiable, facilitant ainsi la livraison continue de nouvelles fonctionnalités et améliorations.</h4>
+      </div>
 
     <div class="container">
        
-
+        
         <main>
+            
             <section id="ci" class="section">
-                <h2>Continuous Integration (CI)</h2>
-                <p>Continuous Integration is the practice of frequently integrating code changes into a shared repository. Each integration triggers automated builds and tests, ensuring early detection of errors and maintaining code quality.</p>
+               
+                <h2>Intégration Continue (CI)</h2>
+                <p>L'intégration continue (CI) est une pratique de développement logiciel où les développeurs fusionnent fréquemment leurs modifications de code dans un référentiel partagé. Chaque fusion déclenche automatiquement le processus de build, de test et de déploiement, permettant ainsi une détection rapide des erreurs et une garantie de la qualité du code. </p>
+            <br>
+           
+            <h4>Exemple de Pipeline CI :</h4>
+            <p>Supposons que vous développiez une application web et que vous utilisiez Git comme système de contrôle de version, voici comment votre pipeline pourrait être configuré par les suivants:</p> 
+            <ol>
+
+<li>  Déclenchement : Chaque fois qu'un développeur pousse du code sur la branche principale (par exemple, la branche "main"), le pipeline CI est déclenché.</li><br>
+
+
+<li>  Construction : Le pipeline commence par la construction de l'application à partir du code source disponible sur la branche "main".</li><br>
+
+<li>  Tests : Une fois la construction terminée, le pipeline exécute une batterie de tests automatisés, y compris des tests unitaires, d'intégration et de système, pour vérifier le bon fonctionnement de l'application.</li><br>
+
+<li>  Analyse du code : Le pipeline peut également inclure des étapes d'analyse statique du code pour identifier les problèmes potentiels de qualité du code, tels que la complexité excessive ou les vulnérabilités de sécurité.</li><br>
+
+<li>  Notifications : En cas d'échec de l'une des étapes du pipeline, des notifications sont envoyées aux développeurs pour les informer des problèmes détectés afin qu'ils puissent les corriger rapidement.</li><br>
+            </ol>   
+               
             </section>
+
 
             <section id="cd" class="section">
-                <h2>Continuous Deployment (CD)</h2>
-                <p>Continuous Deployment is the practice of automatically deploying code changes to production or staging environments after passing automated tests. It enables faster delivery of features and improvements to end-users.</p>
-            </section>
-
-            <section id="example" class="section">
-                <h2>Example</h2>
-                <p>Suppose you have a web application hosted on GitHub. With CI/CD:</p>
+                <h2>Déploiement Continu (CD)</h2>
+                <p>Le déploiement continu (CD) étend les principes de l'intégration continue en automatisant le processus de déploiement des modifications de code validées dans un environnement de production ou de pré-production.</p>
+            
+                <h4>Exemple de Pipeline CD :</h4>
+                <p>Prenons l'exemple d'une application web déployée sur un service cloud tel qu'Amazon Web Services (AWS). Voici comment votre pipeline CD pourrait être configuré :</p>
                 <ol>
-                    <li>Every code push triggers a CI pipeline, which runs automated tests on the codebase.</li>
-                    <li>If the tests pass, the CD pipeline automatically deploys the changes to the production server.</li>
+                    
+                        
+                        
+                        <li>  Approbation manuelle : Après la réussite des tests dans le pipeline CI, une approbation manuelle peut être requise pour déclencher le déploiement dans l'environnement de production.</li><br>
+                        
+                        <li>  Déploiement : Une fois l'approbation obtenue, le pipeline CD déclenche automatiquement le processus de déploiement dans l'environnement de production, en mettant à jour les instances de serveur ou les conteneurs d'application.</li><br>
+                        
+                        <li>  Vérification post-déploiement : Le pipeline peut inclure des tests supplémentaires dans l'environnement de production pour s'assurer que les modifications sont correctement déployées et ne provoquent pas de régression.</li><br>
+                        
+                        <li>  Surveillance et rollback : Après le déploiement, le pipeline surveille les performances de l'application en production et peut déclencher un rollback automatique en cas de défaillance ou de performance insatisfaisante.</li><br>
+                    
                 </ol>
             </section>
 
             <section id="use" class="section">
-                <h2>How to Use CI/CD</h2>
-                <p>To implement CI/CD:</p>
+                <h2>Implementation de Pipeline CI/CD</h2>
+                <p>En combinant CI et CD, les équipes de développement peuvent automatiser et accélérer le processus de développement logiciel tout en garantissant la qualité et la fiabilité des applications déployées.  Il existe plusieurs outils populaires pour créer des pipelines CI/CD, chacun offrant ses propres fonctionnalités et avantages.</p>
+                <h4>Voici les exemples des principaux outils :</h4>
                 <ol>
-                    <li>Choose a CI/CD tool like Jenkins, Travis CI, CircleCI, or GitLab CI/CD.</li>
-                    <li>Configure your CI/CD pipeline to perform automated builds, tests, and deployments.</li>
-                    <li>Integrate the CI/CD pipeline into your version control system (e.g., GitHub, GitLab) to trigger builds on code changes.</li>
-                    <li>Monitor the pipeline for failures and continuously improve it to optimize the development workflow.</li>
+                    <li>Jenkins : Jenkins est l'un des outils CI/CD les plus anciens et les plus largement utilisés. Il offre une grande flexibilité grâce à son architecture extensible basée sur des plugins.</li><br>
+                    <li>Travis CI : Travis CI est un service d'intégration continue hébergé, principalement utilisé pour les projets open source. Il prend en charge l'intégration native avec GitHub et offre une configuration simple basée sur un fichier de configuration YAML.</li><br>
+                    <li>CircleCI : CircleCI est une plateforme d'intégration et de déploiement continus qui prend en charge les projets hébergés sur GitHub et Bitbucket. Il offre des options de configuration flexibles et une intégration transparente avec les principaux fournisseurs cloud.</li><br>
+                    <li>GitLab CI/CD : GitLab CI/CD est intégré directement dans l'outil de gestion de code source GitLab, offrant ainsi une solution tout-en-un pour la gestion du code, l'intégration continue et le déploiement continu.</li><br>
+                    <li>GitHub Actions : GitHub Actions est un service d'automatisation intégré à GitHub, permettant aux développeurs de créer des workflows personnalisés directement dans leur référentiel GitHub.</li><br>
+                    <li>Azure DevOps : Azure DevOps, anciennement connu sous le nom de Visual Studio Team Services (VSTS), est une suite complète d'outils de développement, y compris des fonctionnalités d'intégration continue et de déploiement continu.</li><br>
+                
+                    <p>Ces outils offrent une gamme de fonctionnalités pour automatiser le processus de développement logiciel, du build et des tests à la livraison et au déploiement continus. Le choix de l'outil dépend souvent des besoins spécifiques du projet, de la préférence de l'équipe et de l'intégration avec d'autres outils et services utilisés dans le cadre du développement.</p>
                 </ol>
             </section>
-        </main>
-    </div>
+       
+    
+    <br>
+    <section id="use" class="section">
+        <strong>Jenkins Pipeline :</strong>
+        <img src="jenkispipe.PNG" alt="jen">
+        
+        <br>
+       <strong>Gitlab Pipeline :</strong>
+       <img src="gitlabpipe.png" alt="gitl">
+
+    </section>
+</main>
+</div>
+  
+    
+    
 
     <footer>
-        <p>&copy; 2024 CI/CD Overview</p>
+        <p>&copy; 2024 Eloisa BERNARDEZ</p>
     </footer>
 </body>
 </html>
